@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozarist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- hero section -->
+    <section id="hero">
+        <div class="hero w-100 h-100 p-3 mx-auto d-flex align-items-center justify-content-center gap-5">
+            <div class="">
+                <!-- <h5><b>Portofolio</b></h5> -->
+                <h1 class="">Ahmad Azzam Mozarist</h1>
+                <h2 class="mb-4"><span>
+                        <div class="typing-container" id="typing"></div>
+                </h2></span>
+                <a href="#awal" class="btn btn-1">Tentang Saya</a>
+                <a href="#kontak" class="btn btn-2 ms-3">Hubungi Saya</a>
+            </div>
+            <div>
+                <img src="Asset/azzam.png" class="" style="width: 325px;" alt="...">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md sticky-top mynavbar bg-white" id="awal">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Mozarist</strong></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mozarist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang Saya</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyek">Proyek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link primary-text" href="#kontak">Hubungi Saya</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- about section -->
+    <section id="about">
+        <div class="container" data-aos="fade-up">
+            <br>
+            <div class="d-flex mb-5 justify-content-center gap-4">
+                <div>
+                    <img src="Asset/azam-removebg-preview.png" class="card-img h-100" alt="...">
+                </div>
+                <div class="d-flex flex-fill flex-column justify-content-between">
+                    <div class="about">
+                        <h4>Nama Saya Ahmad Azzam Mozarist</h4>
+                        <p>Seorang siswa yang menemukan minat dalam pengembangan web dan koding. Bersekolah di <a
+                                href="https://sites.google.com/guru.smk.belajar.id/portal-xpro/beranda" target="_blank"
+                                class="text-decoration-none primary-text">
+                                SMK Pesat
+                                IT XPRO
+                            </a> dan memilih jurusan RPL (Rekayasa Perangkat Lunak) untuk terus mendalami dan
+                            mengembangkan
+                            keterampilannya.
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between gap-3">
+                        <div class="card w-100 bg-black text-white">
+                            <div class="card-body">
+                                <p><b>Keahlian saya</b></p>
+                                <ul>
+                                    <li>Web Design</li>
+                                    <li>Web Development</li>
+                                    <li>Graphic Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card w-100">
+                            <div class="card-body">
+                                <p><b>Alat yang digunakan</b></p>
+                                <ul>
+                                    <li>Visual Code Studio</li>
+                                    <li>Figma</li>
+                                    <li>HTML, CSS, JS, PHP, Bootstrap, Tailwind</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- project section -->
+    <section id="proyek">
+        <div class="container my-5">
+            <h2>Proyek Saya</h2>
+
+            <div class="d-flex flex-row mt-5 mb-4 gap-4 justify-content-between">
+                <div class="card p-3" style="width: 35rem;">
+                    <img src="Asset/porto-1.png" class="card-img-top rounded h-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foodie UI Design</h5>
+                        <a href="https://github.com/mozarist/Modul-1" style="text-decoration: none;">
+                            <p class="card-text text-capitalize primary-text">detail portofolio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3" style="width: 35rem;">
+                    <img src="Asset/porto-2.png" class="card-img-top rounded h-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TechEduca Landing Page</h5>
+                        <a href="https://mozarist.github.io/Modul-2/" style="text-decoration: none;">
+                            <p class="card-text text-capitalize primary-text">detail portfolio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card p-3" style="width: 35rem;">
+                    <img src="Asset/porto-3.png" class="card-img-top rounded h-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ExProTravel Landing Page</h5>
+                        <a href="" style="text-decoration: none;">
+                            <p class="card-text text-capitalize primary-text">detail portfolio</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-2 w-100">Lihat Lebih Banyak</button>
+        </div>
+
+    </section>
+
+
+    <!-- contact section -->
+    <section id="kontak">
+        <div class="container my-5">
+            <div class="card w-100 bg-black text-white px-5 pt-5">
+                <h2>Ayo Terhubung</h2>
+                <hr>
+                <div class="d-flex justify-content-between gap-3 my-5">
+                    <div class="card w-100 bg-black text-white" data-aos="flip-left">
+                        <div class="card-body">
+                            <p><i class="bi bi-github"></i></p>
+                            <p><b>GitHub</b></p>
+                            <hr>
+                            <a href="https://github.com/mozarist" target="_blank"
+                                class="text-white text-decoration-none fs-5">Mozarist</a>
+                        </div>
+                    </div>
+                    <div class="card w-100 bg-black text-white" data-aos="flip-left">
+                        <div class="card-body">
+                            <p><i class="bi bi-envelope-at-fill"></i></p>
+                            <p><b>Gmail</b></p>
+                            <hr>
+                            <p class=" fs-5">azzammozarist.xpro@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card w-100 bg-black text-white" data-aos="flip-left">
+                        <div class="card-body">
+                            <p><i class="bi bi-instagram"></i></p>
+                            <p><b>Instagram</b></p>
+                            <hr>
+                            <a href="https://www.instagram.com/_mzrst.1/" target="_blank"
+                                class="text-decoration-none text-white fs-5">@_mzrst.1</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-black text-white p-5">
+        <div class="container">
+            <h3 class="fs-1">Ahmad Azzam Mozarist</h3>
+            <hr>
+            Copyright &copy; 2025 Mozarist
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const texts = ["Seorang Web Developer", "Desain, Koding, Sukses."];
+        let index = 0;
+        let charIndex = 0;
+        function typeEffect() {
+            if (charIndex < texts[index].length) {
+                document.getElementById("typing").innerHTML += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeEffect, 50);
+            } else {
+                setTimeout(eraseEffect, 2500);
+            }
+        }
+        function eraseEffect() {
+            if (charIndex > 0) {
+                document.getElementById("typing").innerHTML = texts[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseEffect, 50);
+            } else {
+                index = (index + 1) % texts.length;
+                setTimeout(typeEffect, 500);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
