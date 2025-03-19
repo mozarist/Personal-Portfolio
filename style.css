@@ -19,13 +19,13 @@ body {
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 72px;
 }
 
 .hero h2 span {
     font-family: "inconsolata";
     font-weight: 600;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .typing-container {
@@ -44,7 +44,7 @@ body {
 .btn-1 {
     border: solid 1px black;
     border-radius: 4rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
     color: black;
     font-weight: 500;
 }
@@ -53,14 +53,14 @@ body {
     border: solid 1px var(--primary);
     border-radius: 4rem;
     /* background-color: var(--primary); */
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
     color: var(--primary);
 }
 
 .btn-2 {
     border: solid 1px black;
     border-radius: 4rem;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
     background-color: black;
     color: white;
     font-weight: 500;
@@ -70,7 +70,7 @@ body {
     border: solid 1px var(--primary);
     border-radius: 4rem;
     background-color: var(--primary);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
     color: white;
 }
 
