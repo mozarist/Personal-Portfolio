@@ -1,14 +1,22 @@
 :root {
     --primary: #1c47c7;
     --primary-hover: #082478 ;
-    --bg: white;
+    --base: white;
     --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.darkmode{
+        --primary: #1c47c7;
+        --primary-hover: #082478 ;
+        --base: rgb(0, 0, 0);
+        --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 body {
     font-size: 1.2rem;
     font-family: "Poppins", serif;
     scroll-behavior: smooth;
+    background-color: var(--base);
 }
 
 .hero {
