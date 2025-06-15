@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozarist | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        #navbar {
+            transition: transform 0.3s ease;
+        }
+
+        #navbar.hidden-offscreen {
+            transform: translateY(-100%);
+            top: 0;
+        }
+    </style>
+</head>
+
+<body class="dark:bg-black font-[inter]">
+    <nav id="navbar"
+        class="hidden-offscreen backdrop-blur-md border-b lg:border border-zinc-800 lg:rounded-full w-full lg:w-fit text-white fixed left-1/2 -translate-x-1/2 lg:top-5 transition-transform duration-300 z-50">
+        <div class="flex items-center justify-center gap-10 px-5 lg:px-10 mx-auto py-3">
+            <!-- Logo -->
+            <div class="md:text-xl text-md font-bold">Mozarist</div>
+
+            <!-- Quick Links -->
+            <ul class="flex gap-2 lg:gap-3 items-center text-sm lg:text-base">
+                <li><a href="#hero" id="nav-hero"
+                        class="text-zinc-300 hover:text-white transition flex gap-2 items-center">
+                        <span>Scroll to the top</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m9 9 6-6m0 0 6 6m-6-6v12a6 6 0 0 1-12 0v-3" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#about" id="nav-about"
+                        class="text-white rounded-full hover:text-emerald-400 flex items-center gap-1">
+                        <span>About me</span></a></li>
+                <li><a href="#projects" id="nav-projects"
+                        class="text-white rounded-full hover:text-emerald-400 flex items-center gap-1">
+                        <span>Projects</span></a></li>
+                <li><a href="#contacts" id="nav-contacts"
+                        class="text-white rounded-full hover:text-emerald-400 flex items-center gap-1">
+                        <span>Get in touch</span></a></li>
+            </ul>
+            <!-- responsive:medium more button -->
+            <button onclick=""
+                class="block lg:hidden p-1 rounded-lg border border-transparent hover:border hover:border-zinc-400 transition">
+                <!--more-->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </button>
+
+
+
+
+
+
+        </div>
+    </nav>
+    <!-- navbar ends -->
+
+
+    <!-- hero -->
+    <div class="h-screen flex justify-center items-center" id="hero">
+        <div class="flex flex-col justify-center items-center gap-5 z-10 font-[poppins]">
+            <h1 class="text-white text-2xl md:text-6xl font-semibold text-center text-shadow-2xl">Ahmad Azzam Mozarist
+            </h1>
+            <div class="min-h-10 inline-block text-white text-md md:text-xl font-mono" id="typing"></div>
+            <div class="flex gap-5">
+                <a href="#about"
+                    class="py-2 w-35 text-center rounded-full border border-white backdrop-blur-md hover:border-emerald-600 hover:bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-110 hover:shadow-2xl text-white transition text-xs md:text-sm">
+                    About me
+                </a>
+                <a href="#contacts"
+                    class="py-2 w-35 text-center rounded-full border border-white backdrop-blur-md text-emerald-600 bg-white hover:shadow-2xl hover:text-white hover:border-emerald-600 hover:bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-110 transition text-xs md:text-sm">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex flex-col gap-25 lg:mx-30 mx-10 py-30">
+
+
+        <!-- profile -->
+        <div id="about"
+            class="flex flex-col gap-10 scroll-m-25 p-10 bg-gradient-to-r from-black to-zinc-900 border border-zinc-800 rounded-lg">
+            <h6 class="text-white text-sm font-semibold font-mono">
+                mozarist<span class="text-zinc-500">/</span>README<span class="text-zinc-500 font-light">.md</span>
+            </h6>
+
+            <div class="w-full flex justify-center items-center flex-wrap md:flex-nowrap md:gap-15 gap-5">
+                <div
+                    class="flex flex-col gap-5 items-start md:flex-1 lg:flex-2 justify-start rounded-lg w-full">
+                    <div class="flex flex-col gap-3 justify-start">
+                        <div class="flex flex-col">
+                            <h2 class="text-3xl font-bold text-white">Ahmad Azzam Mozarist</h2>
+                            <p class="text-zinc-400 text-sm">azzammozarist.xpro@gmail.com</p>
+                        </div>
+                        <p
+                            class="text-sm text-emerald-400 p-2 w-45 font-mono border border-zinc-800 rounded-lg">
+                            Junior
+                            Web Developer</p>
+                    </div>
+                    <div
+                        class=" w-full flex flex-col gap-2">
+                        <h5 class="text-white text-md font-semibold">Hello world, I'm Azzam! 👋</h5>
+                        <p class="text-zinc-400 text-sm">A student who finds interest in web development and coding.
+                            Currently studying at
+                            <a href="https://sites.google.com/guru.smk.belajar.id/portal-xpro/beranda" target="_blank"
+                                class="hover:underline text-zinc-300">
+                                Pesat IT XPro Vocational High school
+                            </a> and chooses Software Engineering major to explore and develop more skills. Loves front-end and keep expanding my knowledge about back-end too.
+                        </p>
+                    </div>
+                    <div class="flex md:flex-col gap-2">
+                        <p class="text-sm text-zinc-400 flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            Bogor, Jawa Barat, Indonesia.
+                        </p>
+                        <p class="text-sm text-zinc-400 flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                            </svg>
+                            SMK Informatika Pesat IT XPRO
+                        </p>
+                    </div>
+                </div>
+
+                <img class="md:w-1/5 aspect-square rounded-3xl ring-2 ring-zinc-800 bg-gradient-to-tr from-black to-zinc-900 md:flex-1 object-cover"
+                    src="Asset/azam-removebg-preview.png" alt="user img">
+            </div>
+
+            <!-- <button
+                class="bg-zinc-900 hover:bg-zinc-800 text-emerald-400 transition text-sm font-semibold border border-zinc-800 shadow-lg shadow-zinc-900 rounded-full w-fit py-2 px-10 text-center">
+                More about me
+            </button> -->
+
+            <hr class="text-zinc-800">
+
+            <h2
+                class="flex flex-col gap-3 bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent text-5xl font-bold w-fit">
+                What i use
+                <span class="text-zinc-300 text-sm font-light">
+                    My Tech Stacks and Tools.
+                </span>
+            </h2>
+
+            <div class="flex flex-col md:flex-row justify-between gap-3">
+                <div
+                    class="flex-2 flex flex-col bg-gradient-to-r from-zinc-900 to-zinc-950 border border-zinc-800 shadow-lg shadow-zinc-900 rounded-lg">
+                    <div class="text-white text-md font-semibold p-5">
+                        Language & framework
+                    </div>
+                    <div class="h-34 bg-zinc-300 rounded-lg">
+                        <div id="card-container" class="relative w-full h-full overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-between px-10 text-xl font-semibold transition-opacity duration-1000 opacity-100"
+                                data-index="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-orange-600"
+                                    fill="currentColor"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-blue-600"
+                                    fill="currentColor"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-yellow-400"
+                                    fill="currentColor"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-between px-10 text-xl font-semibold transition-opacity duration-1000 opacity-0"
+                                data-index="1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-indigo-800"
+                                    fill="currentColor"
+                                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25" fill="none" viewBox="0 0 54 33">
+                                    <g clip-path="url(#prefix__clip0)">
+                                        <path fill="#38bdf8" fill-rule="evenodd"
+                                            d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="prefix__clip0">
+                                            <path fill="#fff" d="M0 0h54v32.4H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-violet-600"
+                                    fill="currentColor"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex-1 flex flex-col bg-gradient-to-r from-zinc-900 to-zinc-950 border border-zinc-800 shadow-lg shadow-zinc-900 rounded-lg">
+                    <div class="text-white text-md font-semibold p-5">
+                        Also use:
+                    </div>
+                    <div class="h-34 bg-zinc-300 rounded-lg">
+                        <div id="card-container" class="relative w-full h-full overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center px-5 text-xl font-semibold transition-opacity duration-1000 opacity-100"
+                                data-index="0">
+                                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="1667"
+                                    class="size-25" height="2500">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #0acf83
+                                        }
+
+                                        .st1 {
+                                            fill: #a259ff
+                                        }
+
+                                        .st2 {
+                                            fill: #f24e1e
+                                        }
+
+                                        .st3 {
+                                            fill: #ff7262
+                                        }
+
+                                        .st4 {
+                                            fill: #1abcfe
+                                        }
+                                    </style>
+                                    <title>Figma.logo</title>
+                                    <desc>Created using Figma</desc>
+                                    <path id="path0_fill" class="st0"
+                                        d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
+                                    <path id="path1_fill" class="st1"
+                                        d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
+                                    <path id="path1_fill_1_" class="st2"
+                                        d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
+                                    <path id="path2_fill" class="st3"
+                                        d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
+                                    <path id="path3_fill" class="st4"
+                                        d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center px-5 text-xl font-semibold transition-opacity duration-1000 opacity-0"
+                                data-index="1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-blue-950"
+                                    fill="currentColor"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8 .9 0 1.8 .1 2.8 .2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7 .3 13.7 .3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z" />
+                                </svg>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center px-5 text-xl font-semibold transition-opacity duration-1000 opacity-0"
+                                data-index="2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    class="size-25 rounded-full" viewBox="0 0 2406 2406">
+                                    <path
+                                        d="M1 578.4C1 259.5 259.5 1 578.4 1h1249.1c319 0 577.5 258.5 577.5 577.4V2406H578.4C259.5 2406 1 2147.5 1 1828.6V578.4z"
+                                        fill="#74aa9c" />
+                                    <path id="a"
+                                        d="M1107.3 299.1c-197.999 0-373.9 127.3-435.2 315.3L650 743.5v427.9c0 21.4 11 40.4 29.4 51.4l344.5 198.515V833.3h.1v-27.9L1372.7 604c33.715-19.52 70.44-32.857 108.47-39.828L1447.6 450.3C1361 353.5 1237.1 298.5 1107.3 299.1zm0 117.5-.6.6c79.699 0 156.3 27.5 217.6 78.4-2.5 1.2-7.4 4.3-11 6.1L952.8 709.3c-18.4 10.4-29.4 30-29.4 51.4V1248l-155.1-89.4V755.8c-.1-187.099 151.601-338.9 339-339.2z"
+                                        fill="#fff" />
+                                    <use xlink:href="#a" transform="rotate(60 1203 1203)" />
+                                    <use xlink:href="#a" transform="rotate(120 1203 1203)" />
+                                    <use xlink:href="#a" transform="rotate(180 1203 1203)" />
+                                    <use xlink:href="#a" transform="rotate(240 1203 1203)" />
+                                    <use xlink:href="#a" transform="rotate(300 1203 1203)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex-1 flex flex-col bg-gradient-to-r from-zinc-900 to-zinc-950 border border-zinc-800 shadow-lg shadow-zinc-900 rounded-lg">
+                    <div class="text-white text-md font-semibold p-5">
+                        Currently learning
+                    </div>
+                    <div class="h-34 bg-zinc-300 rounded-lg">
+                        <div id="card-container" class="relative w-full h-full overflow-hidden">
+                            <div class="absolute inset-0 flex items-center justify-center px-10 text-xl font-semibold transition-opacity duration-1000 opacity-100"
+                                data-index="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-25 text-yellow-400"
+                                    fill="currentColor"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.querySelectorAll('.relative').forEach(card => {
+                    const slides = card.querySelectorAll('[data-index]');
+                    let current = 0;
+
+                    setInterval(() => {
+                        slides[current].classList.remove('opacity-100');
+                        slides[current].classList.add('opacity-0');
+
+                        current = (current + 1) % slides.length;
+
+                        slides[current].classList.remove('opacity-0');
+                        slides[current].classList.add('opacity-100');
+                    }, 3000);
+                });
+            </script>
+
+
+
+        </div>
+
+
+
+        <!-- projects -->
+        <div class="flex flex-col gap-10 scroll-m-25" id="projects">
+            <h2
+                class="bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent w-fit h-13 self-center text-5xl text-center font-bold">
+                My Projects
+            </h2>
+            <div class="flex flex-col gap-5">
+                <div
+                    class="flex flex-col md:flex-row bg-zinc-950 text-white rounded-lg shadow-lg overflow-hidden w-full min-h-75 border border-zinc-800">
+
+                    <!-- Preview Gambar Kiri -->
+                    <div class="md:w-1/2 w-full">
+                        <img src="Asset/porto-admindashboard.png" alt="Portfolio Preview"
+                            class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Deskripsi Kanan -->
+                    <div
+                        class="md:w-1/2 w-full p-6 flex flex-col justify-between gap-2 bg-gradient-to-t from-zinc-950 to-zinc-900">
+                        <div class="flex flex-col gap-3">
+                            <h5 class="text-3xl font-semibold">OSIS Voting Admin Dashboard</h5>
+                            <p class="text-zinc-400 text-md">
+                                A web-based voting application for school elections, built using PHP and MySQL.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-wrap gap-2">
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-indigo-950 text-indigo-500 text-sm font-semibold border border-indigo-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" />
+                                    </svg>
+                                    PHP
+                                </div>
+
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-amber-950 text-amber-600 text-sm font-semibold border border-amber-600 rounded-full">
+                                    <svg viewBox="-18.458 -22.75 191.151 191.151" xmlns="http://www.w3.org/2000/svg"
+                                        class="size-6" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path d="M-18.458 6.58h191.151v132.49H-18.458V6.58z" fill="none"></path>
+                                            <path
+                                                d="M40.054 113.583h-5.175c-.183-8.735-.687-16.947-1.511-24.642h-.046l-7.879 24.642h-3.94l-7.832-24.642h-.045c-.581 7.388-.947 15.602-1.099 24.642H7.81c.304-10.993 1.068-21.299 2.289-30.919h6.414l7.465 22.719h.046l7.511-22.719h6.137c1.344 11.268 2.138 21.575 2.382 30.919M62.497 90.771c-2.107 11.434-4.887 19.742-8.337 24.928-2.688 3.992-5.633 5.99-8.84 5.99-.855 0-1.91-.258-3.16-.77v-2.757c.611.088 1.328.138 2.152.138 1.498 0 2.702-.412 3.62-1.238 1.098-1.006 1.647-2.137 1.647-3.388 0-.858-.428-2.612-1.282-5.268L42.618 90.77h5.084l4.076 13.19c.916 2.995 1.298 5.086 1.145 6.277 2.229-5.953 3.786-12.444 4.673-19.468h4.901v.002z"
+                                                fill="#5d87a1"></path>
+                                            <path
+                                                d="M131.382 113.583h-14.7V82.664h4.945v27.113h9.755v3.806zM112.834 114.33l-5.684-2.805c.504-.414.986-.862 1.42-1.381 2.416-2.838 3.621-7.035 3.621-12.594 0-10.229-4.014-15.346-12.045-15.346-3.938 0-7.01 1.298-9.207 3.895-2.414 2.84-3.619 7.022-3.619 12.551 0 5.435 1.068 9.422 3.205 11.951 1.955 2.291 4.902 3.438 8.843 3.438 1.47 0 2.819-.18 4.048-.543l7.4 4.308 2.018-3.474zm-18.413-6.934c-1.252-2.014-1.878-5.248-1.878-9.707 0-7.785 2.365-11.682 7.1-11.682 2.475 0 4.289.932 5.449 2.792 1.25 2.017 1.879 5.222 1.879 9.619 0 7.849-2.367 11.774-7.099 11.774-2.476.001-4.29-.928-5.451-2.796M85.165 105.013c0 2.622-.962 4.773-2.884 6.458-1.924 1.678-4.504 2.519-7.737 2.519-3.024 0-5.956-.966-8.794-2.888l1.329-2.655c2.442 1.223 4.653 1.831 6.638 1.831 1.863 0 3.319-.413 4.375-1.232 1.055-.822 1.684-1.975 1.684-3.433 0-1.837-1.281-3.407-3.631-4.722-2.167-1.19-6.501-3.678-6.501-3.678-2.349-1.712-3.525-3.55-3.525-6.578 0-2.506.877-4.529 2.632-6.068 1.757-1.545 4.024-2.315 6.803-2.315 2.87 0 5.479.769 7.829 2.291l-1.192 2.656c-2.01-.854-3.994-1.281-5.951-1.281-1.585 0-2.809.381-3.66 1.146-.858.762-1.387 1.737-1.387 2.933 0 1.828 1.308 3.418 3.722 4.759 2.196 1.192 6.638 3.723 6.638 3.723 2.409 1.709 3.612 3.53 3.612 6.534"
+                                                fill="#f8981d"></path>
+                                            <path
+                                                d="M137.59 72.308c-2.99-.076-5.305.225-7.248 1.047-.561.224-1.453.224-1.531.933.303.3.338.784.601 1.198.448.747 1.229 1.752 1.942 2.276.783.6 1.569 1.194 2.393 1.717 1.453.899 3.1 1.422 4.516 2.318.825.521 1.645 1.195 2.471 1.756.406.299.666.784 1.193.971v-.114c-.264-.336-.339-.822-.598-1.196l-1.122-1.082c-1.084-1.456-2.431-2.727-3.884-3.771-1.196-.824-3.812-1.944-4.297-3.322l-.076-.076c.822-.077 1.797-.375 2.578-.604 1.271-.335 2.43-.259 3.734-.594.6-.15 1.195-.338 1.797-.523v-.337c-.676-.673-1.158-1.567-1.869-2.203-1.902-1.643-3.998-3.25-6.164-4.595-1.16-.749-2.652-1.231-3.887-1.868-.445-.225-1.195-.336-1.457-.71-.67-.822-1.047-1.904-1.533-2.877-1.08-2.053-2.129-4.331-3.061-6.502-.674-1.456-1.084-2.91-1.906-4.257-3.85-6.35-8.031-10.196-14.457-13.971-1.381-.786-3.024-1.121-4.779-1.533l-2.803-.148c-.598-.262-1.197-.973-1.719-1.309-2.132-1.344-7.621-4.257-9.189-.411-1.01 2.431 1.494 4.821 2.354 6.054.635.856 1.458 1.83 1.902 2.802.263.635.337 1.309.6 1.98.598 1.644 1.157 3.473 1.943 5.007.41.782.857 1.604 1.381 2.312.3.414.822.597.936 1.272-.521.744-.562 1.867-.861 2.801-1.344 4.221-.819 9.45 1.086 12.552.596.934 2.018 2.99 3.92 2.202 1.684-.672 1.311-2.801 1.795-4.668.111-.451.038-.747.262-1.043v.073c.521 1.045 1.047 2.052 1.53 3.1 1.159 1.829 3.177 3.735 4.858 5.002.895.676 1.604 1.832 2.725 2.245V74.1h-.074c-.227-.335-.559-.485-.857-.745-.674-.673-1.42-1.495-1.943-2.241-1.566-2.093-2.952-4.41-4.182-6.801-.602-1.16-1.121-2.428-1.606-3.586-.226-.447-.226-1.121-.601-1.346-.562.821-1.381 1.532-1.791 2.538-.711 1.609-.785 3.588-1.049 5.646l-.147.072c-1.19-.299-1.604-1.53-2.056-2.575-1.119-2.654-1.307-6.914-.336-9.976.26-.783 1.385-3.249.936-3.995-.225-.715-.973-1.122-1.383-1.685-.482-.708-1.01-1.604-1.346-2.39-.896-2.091-1.347-4.408-2.312-6.498-.451-.974-1.234-1.982-1.868-2.879-.712-1.008-1.495-1.718-2.058-2.913-.186-.411-.447-1.083-.148-1.53.073-.3.225-.412.523-.487.484-.409 1.867.111 2.352.336 1.385.56 2.543 1.083 3.699 1.867.523.375 1.084 1.085 1.755 1.272h.786c1.193.26 2.538.072 3.661.41 1.979.636 3.772 1.569 5.38 2.576 4.893 3.103 8.928 7.512 11.652 12.778.447.858.637 1.644 1.045 2.539.787 1.832 1.76 3.7 2.541 5.493.785 1.755 1.533 3.547 2.654 5.005.559.784 2.805 1.195 3.812 1.606.745.335 1.905.633 2.577 1.044 1.271.783 2.537 1.682 3.732 2.543.595.448 2.465 1.382 2.576 2.13M99.484 39.844a5.82 5.82 0 0 0-1.529.188v.075h.072c.301.597.824 1.011 1.197 1.532.301.599.562 1.193.857 1.791l.072-.074c.527-.373.789-.971.789-1.868-.227-.264-.262-.522-.451-.784-.22-.374-.705-.56-1.007-.86"
+                                                fill="#5d87a1"></path>
+                                            <path
+                                                d="M141.148 113.578h.774v-3.788h-1.161l-.947 2.585-1.029-2.585h-1.118v3.788h.731v-2.882h.041l1.078 2.882h.557l1.074-2.882v2.882zm-6.235 0h.819v-3.146h1.072v-.643h-3.008v.643h1.115l.002 3.146z"
+                                                fill="#f8981d"></path>
+                                        </g>
+                                    </svg>
+                                    MySQL
+                                </div>
+
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-orange-950 text-orange-600 text-sm font-semibold border border-orange-600 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-orange-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                    </svg>
+                                    HTML
+                                </div>
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-sky-950 text-sky-300 text-sm font-semibold border border-sky-300 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none"
+                                        viewBox="0 0 54 33">
+                                        <g clip-path="url(#prefix__clip0)">
+                                            <path fill="#38bdf8" fill-rule="evenodd"
+                                                d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                                                clip-rule="evenodd" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="prefix__clip0">
+                                                <path fill="#fff" d="M0 0h54v32.4H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    TailwindCSS
+                                </div>
+
+                            </div>
+
+                            <a href="https://github.com/mozarist/OSIS-Admin-Voting-Dashboard" target="_blank"
+                                class="flex items-center gap-2 w-fit bg-zinc-900 hover:bg-zinc-800 text-white text-xs p-2 px-4 rounded-lg transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="currentColor"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32l117.5 0c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7L416 96c35.3 0 64 28.7 64 64l0 32-336 0c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224l400 0c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480L32 480c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z" />
+                                </svg>
+                                View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row bg-zinc-950 text-white rounded-lg shadow-lg overflow-hidden w-full min-h-75 border border-zinc-800">
+
+                    <!-- Preview Gambar Kiri -->
+                    <div class="md:w-1/2 w-full">
+                        <img src="Asset/porto-exprotravel.png" alt="Portfolio Preview"
+                            class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Deskripsi Kanan -->
+                    <div
+                        class="md:w-1/2 w-full p-6 flex flex-col justify-between gap-2 bg-gradient-to-t from-zinc-950 to-zinc-900">
+                        <div class="flex flex-col gap-3">
+                            <h5 class="text-3xl font-semibold">ExProTravel Landing Page</h5>
+                            <p class="text-zinc-400 text-md">
+                                ExProTravel is a travel booking agency that provides travel and trip planning. (A
+                                front-end dummy landing page)
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-wrap gap-2">
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-orange-950 text-orange-600 text-sm font-semibold border border-orange-600 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6 text-orange-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                    </svg>
+                                    HTML
+                                </div>
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-blue-950 text-blue-500 text-sm font-semibold border border-blue-500 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z" />
+                                    </svg>
+                                    CSS
+                                </div>
+
+                                <div
+                                    class="flex gap-2 items-center p-1 px-3 w-fit bg-yellow-950 text-yellow-400 text-sm font-semibold border border-yellow-400 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+                                    </svg>
+                                    JS
+                                </div>
+
+                            </div>
+
+                            <a href="https://github.com/mozarist/Modul-3" target="_blank"
+                                class="flex items-center gap-2 w-fit bg-zinc-900 hover:bg-zinc-800 text-white text-xs p-2 px-4 rounded-lg transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="currentColor"
+                                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                    <path
+                                        d="M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32l117.5 0c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7L416 96c35.3 0 64 28.7 64 64l0 32-336 0c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224l400 0c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480L32 480c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z" />
+                                </svg>
+                                View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/mozarist" target="_blank"
+                class="self-center bg-zinc-900 hover:bg-zinc-800 text-emerald-400 transition text-sm font-semibold border border-zinc-800 shadow-lg shadow-zinc-900 rounded-full w-fit py-2 px-10 text-center">
+                More Projects on My Github
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- contacts -->
+    <div class="flex flex-col gap-10 scroll-m-25" id="contacts">
+        <div class="min-h-125 flex flex-col justify-center items-center gap-10 p-5 lg:px-15" id="contact">
+            <div class="flex flex-col gap-2 items-center">
+                <h5 class="text-white text-2xl z-10 text-center flex items-center gap-3">
+                    Feel free to reach me out
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="currentColor"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" />
+                    </svg>
+                </h5>
+                <h6 class="text-white z-10 text-4xl font-semibold">Amazing collaboration = Amazing project
+                </h6>
+            </div>
+            <div class="flex justify-center items-center gap-5 w-full z-10">
+                <a href="#"
+                    class="flex-1 flex flex-col gap-5 shadow-xl hover:scale-105 hover:bg-gradient-to-r hover:from-black hover:to-zinc-900 text-white hover:text-emerald-500 min-h-40 p-5 divide-y divide-zinc-300 hover:divide-zinc-600 border border-zinc-300 hover:border-zinc-600 rounded-xl transition transition-color duration-300 ease-out">
+                    <h6 class="text-lg font-semibold pb-2">
+                        Email
+                    </h6>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-sm">
+                            azzammozarist.xpro@gmail.com
+                        </p>
+                        <p class="text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/mozarist" target="_blank"
+                    class="flex-1 flex flex-col gap-5 shadow-xl hover:scale-105 hover:bg-gradient-to-r hover:from-black hover:to-zinc-900 text-white hover:text-emerald-500 min-h-40 p-5 divide-y divide-zinc-300 hover:divide-zinc-600 border border-zinc-300 hover:border-zinc-600 rounded-xl transition transition-color duration-300 ease-out">
+                    <h6 class="text-lg font-semibold pb-2">
+                        GitHub
+                    </h6>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-sm">
+                            mozarist
+                        </p>
+                        <p class="text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://discord.com/users/779582529761050684" target="_blank"
+                    class="flex-1 flex flex-col gap-5 shadow-xl hover:scale-105 hover:bg-gradient-to-r hover:from-black hover:to-zinc-900 text-white hover:text-emerald-500 min-h-40 p-5 divide-y divide-zinc-300 hover:divide-zinc-600 border border-zinc-300 hover:border-zinc-600 rounded-xl transition transition-color duration-300 ease-out">
+                    <h6 class="text-lg font-semibold pb-2">
+                        Discord
+                    </h6>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-sm">
+                            mzrst
+                        </p>
+                        <p class="text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="currentColor"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/3H9LxM2xEGkZz3dFA" target="_blank"
+                    class="flex-1 flex flex-col gap-5 shadow-xl hover:scale-105 hover:bg-gradient-to-r hover:from-black hover:to-zinc-900 text-white hover:text-emerald-500 min-h-40 p-5 divide-y divide-zinc-300 hover:divide-zinc-600 border border-zinc-300 hover:border-zinc-600 rounded-xl transition transition-color duration-300 ease-out">
+                    <h6 class="text-lg font-semibold pb-2">
+                        Based in Indonesia
+                    </h6>
+                    <div class="flex flex-col flex-1 justify-between">
+                        <p class="text-sm">
+                            Bogor, Jawa Barat.
+                        </p>
+                        <p class="text-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="currentColor"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                <path
+                                    d="M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z" />
+                            </svg>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="flex flex-col gap-5 bg-gradient-to-tr from-black to-emerald-950 px-10 lg:px-20 py-10">
+        <div class="flex flex-col gap-2">
+            <h2 class="text-zinc-100 text-xl md:text-3xl font-semibold font-[poppins]">
+                Ahmad Azzam Mozarist
+            </h2>
+            <p class="text-zinc-300 text-sm">Creativity, Written in Lines of Code.</p>
+        </div>
+        <div class="border-t-2 border-dashed border-zinc-800 w-full"></div>
+        <div class="flex justify-between items-center">
+            <p class="text-zinc-300 text-xs md:text-sm">
+                Copyright &copy; 2025 Mozarist
+            </p>
+            <p class="text-zinc-300 text-xs md:text-sm">
+                Made with <span class="text-red-500">❤</span> ..and a lot of <a href="https://tailwindcss.com"
+                    target="_blank" class="text-blue-100 hover:underline">Tailwindcss</a>.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- scripts -->
+    <script src="AestheticFluidBg.min.js"></script>
+
+    <script>
+        let colorbg = new Color4Bg.AestheticFluidBg({
+            dom: "hero",
+            colors: ["#000000", "#000000", "#114b3d", "#1b8353", "#2f6a46", "#1b935f"],
+            loop: true
+        })
+    </script>
+
+
+    <script src="BlurGradientBg.min.js"></script>
+
+    <script>
+        let colorbgblur = new Color4Bg.BlurGradientBg({
+            dom: "contact",
+            colors: ["#000000", "#235c3c", "#000000", "#292929"],
+            loop: true
+        })
+    </script>
+
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const hero = document.getElementById('hero');
+
+        window.addEventListener('scroll', () => {
+            const heroBottom = hero.getBoundingClientRect().bottom;
+
+            if (heroBottom <= 0) {
+                // Sudah melewati hero, tampilkan navbar
+                navbar.classList.remove('hidden-offscreen');
+            } else {
+                // Masih di area hero, sembunyikan navbar
+                navbar.classList.add('hidden-offscreen');
+            }
+        });
+    </script>
+
+
+    <script>
+        const texts = ["Creativity, Written in Lines of Code.", "Junior Web Developer"];
+        let index = 0;
+        let charIndex = 0;
+        function typeEffect() {
+            if (charIndex < texts[index].length) {
+                document.getElementById("typing").innerHTML += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeEffect, 50);
+            } else {
+                setTimeout(eraseEffect, 2500);
+            }
+        }
+        function eraseEffect() {
+            if (charIndex > 0) {
+                document.getElementById("typing").innerHTML = texts[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseEffect, 50);
+            } else {
+                index = (index + 1) % texts.length;
+                setTimeout(typeEffect, 500);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+
+    <!-- Intersection Observer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const navLink = document.querySelector(`#nav-${entry.target.id}`);
+                    if (entry.isIntersecting) {
+                        navLink.classList.remove('text-white');
+                        navLink.classList.add('text-emerald-400');
+                    } else {
+                        navLink.classList.remove('text-emerald-400');
+                        navLink.classList.add('text-white');
+                    }
+                });
+            }, {
+                threshold: 0.5 // Menganggap section aktif jika 50% dari section terlihat
+            });
+
+            // Memulai observer pada setiap section
+            document.querySelectorAll('div[id]').forEach((section) => {
+                observer.observe(section);
+            });
+        });
+
+    </script>
+
+    <!-- flowbite library script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
